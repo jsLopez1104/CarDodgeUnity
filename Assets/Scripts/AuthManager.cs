@@ -43,6 +43,8 @@ public class AuthManager : MonoBehaviour
             return;
         }
 
+        GameObject.Find("BotonRegistro").GetComponent<UnityEngine.UI.Button>().interactable = false;
+        GameObject.Find("BotonLogin").GetComponent<UnityEngine.UI.Button>().interactable = false;
         StartCoroutine(Registro());
     }
 
@@ -148,7 +150,7 @@ public class AuthManager : MonoBehaviour
         request.uploadHandler = new UploadHandlerRaw(body);
         request.downloadHandler = new DownloadHandlerBuffer();
         request.SetRequestHeader("Content-Type", "application/json");
-        request.timeout = 5;
+        request.timeout = 15;
 
         yield return request.SendWebRequest();
 
@@ -169,6 +171,9 @@ public class AuthManager : MonoBehaviour
         {
             textoError.text = "Error de conexión.";
         }
+
+        GameObject.Find("BotonRegistro").GetComponent<UnityEngine.UI.Button>().interactable = true;
+        GameObject.Find("BotonLogin").GetComponent<UnityEngine.UI.Button>().interactable = true;
     }
 
     [System.Serializable]
