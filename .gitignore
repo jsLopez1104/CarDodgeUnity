@@ -29,3 +29,6 @@ crashlytics-build.properties
 
 # Modelo descargado automaticamente por face_server.py
 face_landmarker.task
+
+# Unity Version Control (Plastic SCM)
+.plastic/
