@@ -6416,6 +6416,9 @@ MonoBehaviour:
   prefabsObstaculo:
   - {fileID: 4677155817960492033, guid: 5607d369d3bacb64a8e0608ac1056a9e, type: 3}
   - {fileID: 3754890379375501374, guid: bc6dd7cebfea8b74dacc7559bcfed923, type: 3}
+  - {fileID: 3754890379375501374, guid: bc6dd7cebfea8b74dacc7559bcfed923, type: 3}
+  - {fileID: 3754890379375501374, guid: bc6dd7cebfea8b74dacc7559bcfed923, type: 3}
+  - {fileID: 4802800674903602375, guid: f0922729f29d9b54b809831d4aa2163f, type: 3}
 --- !u!4 &1582891622
 Transform:
   m_ObjectHideFlags: 0
